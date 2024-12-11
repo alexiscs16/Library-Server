@@ -8,8 +8,6 @@ app.set("views", path.resolve(__dirname, "templates"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended:false}));
 
-app.listen(6053);
-
 const uri = `mongodb+srv://ashoema1:terpito2024@cluster0.j2qaj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 const databaseAndCollection = {db: "library", collection: "libraryUsers"};
