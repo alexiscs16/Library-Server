@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=”en”>
+  <head>
+     <meta charset=”UTF-8">
+     <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+     <title>Rent Media</title>
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,0&icon_names=home,search" />
+
+  </head>
+
+  <body>  
+
+    <h1> Renting a <%-bOrM %> </h1> 
+
+    <form action="/rent" method="post">
+      Title: <input type="text" name="title" required> <br> <br> 
+    
+      <%-auth_id%>: <input type="text" name="Auth_ID" required> <br> <br> 
+
+      <%-Ol_year%>: <input type="text" name="OL_Year" required> <br> <br> 
+
+      Username: <input type="text" name="user" required> <br> <br> 
+
+      Password <input type="password" name="pass" required minlength="6">
+
+      <br> <br>
+
+      <input id="button" type="reset">
+      <input id="button" type="submit" value="Rent"> 
+    </form>
+    
+
+    <span class="material-symbols-outlined"><a href="/">home</a></span>
+  </body>
+  <style>
+    body {
+        padding-top: 2rem;
+        padding-left: 4rem;
+        background-color: #f8c0c8ad;
+        font-size: 1.6rem;
+        color: #1c3a5f;
+    }
+
+    #button {
+    background-color:  #b4ded9d1;
+    border: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border: solid;
+    color: #1c3a5f;
+}
+
+    input[type=text], input[type=password] {
+   
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        color: #1a6d62;
+        font-family: "Signika";
+    }
+
+    a{
+      text-decoration: none;
+      color: #1a6d62
+    
+    }
+
+    </style>
+
+  
+</html>

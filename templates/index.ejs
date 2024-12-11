@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang=”en”>
+  <head>
+     <meta charset=”UTF-8">
+     <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+     <title>Library Home</title>    
+     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+    
+
+  </head>
+  <body>
+    <h1>Online Entertainment Manager</h1>
+
+    <button id="button"><a href="/profile">Create a Profile</a></button>
+    
+    <button id="button"><a href="/rent">Rent a Book or Movie</a></button>
+   
+    <button id="button"><a href="/search">Search for an Item</a></button>
+
+    <button id="button"><a href="/manageAccount">Manage your Account</a></button>
+
+    <button id="button"><a href="/return">Return an Item</a></button>
+
+    <br>
+    <br>
+    <br>
+    <p> Welcome to the online entertainment library. To begin, <a href="/profile">create a profile</a>. <br> 
+        If you're already have an account, you can <a href="/rentMedia?mediaType=Book">rent a book</a> or 
+        <a href="/rentMedia?mediaType=Movies">rent a movie</a> depending on your account type.
+        <br>If you're unsure of the details required for 
+        renting, you can <a href="/search">search for an item</a> to gather the information. </p>
+
+    <br> 
+    <button id="button"><a href="/delete">Deactivate your account</a></button>
+
+  </body>
+
+  <style>
+
+
+    h1 {
+    color:  #1c3a5f;
+    font-size: 3rem;
+    font-family: "Signika";
+    }
+    p {
+        color: #384E77;
+        font-size: larger;
+    }
+
+    #button {
+    background-color: #f8c0c8ad;
+    border: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border: solid;
+}
+    body {
+    padding-left: 8rem;
+    padding-top: 3rem;
+    background-color: #8bbeb237;
+    }
+
+    a:visited{
+        color:#98618c
+    }
+
+    a {
+        color: #1a6d62;
+    }
+  </style>
+
+</html>

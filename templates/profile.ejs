@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang=”en”>
+  <head>
+     <meta charset=”UTF-8">
+     <meta name=”viewport” content=”width=device-width, initial-scale=1.0">
+     <title>Profile Creation</title>
+     <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Signika:wght@300..700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,600,0,0&icon_names=home,search" />
+  </head>
+  <body>
+    <h1>Create a Profile</h1>
+
+    <form action="/profile" method="post">
+        Name: <input type="text" name="name" required> <br> <br>
+        Username: <input type="text" name="user" required> <br> <br>
+        Password: <input type="password" id="pass" name="pass" required minlength="6"> <br> <br>
+        Account Type: 
+        <label><input type="radio" name="accType" value="Books" required>Books</label>
+        <label><input type="radio" name="accType" value="Movies" required>Movies</label>
+        <label><input type="radio" name="accType" required value="Both">Books and Movies</label>
+
+        <br>
+        <br>
+
+        <input type="reset" id="button">
+        <input id="button" type="submit" onclick="return window.confirm(`Create this account? \nYour information cannot be changed afterwards`)" value="Create Account">
+    </form>
+
+    <br> 
+    <br>
+    <span class="material-symbols-outlined"><a href="/">home</a></span>
+  </body>
+
+  <style>
+    body {
+        padding-top: 2rem;
+        padding-left: 4rem;
+        background-color: #f8c0c8ad;
+        font-size: 1.6rem;
+        color:  #1c3a5f;
+     
+    }
+
+    input[type=text], input[type=password] {
+       
+        font-size: 1.4rem;
+    }
+
+    h1 {
+        color: #1a6d62;
+        font-family: "Signika";
+    }
+
+    a{
+        text-decoration: none;
+        color: #1a6d62
+        
+    }
+
+    #button {
+    background-color:  #b4ded9d1;
+    border: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border: solid;
+    color: #1c3a5f;
+}
+
+
+  </style>
+
+</html>
